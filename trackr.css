@@ -1,0 +1,414 @@
+:root {
+    --o-better-font-family: "Rubik";
+    --o-headers-font-family: "Rubik Light";
+    --o-goodform-background-color: hsl(235, 46%, 20%);
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("Rubik-VariableFont_wght.ttf") 
+    format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url("Rubik-Light.ttf")
+    format("truetype");
+    font-style: normal;
+    font-weight: lighter;
+}
+
+
+.grid-lock {
+    gap: 10px;
+    display: grid;
+    grid-auto-rows: 22%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.header-grid {
+    gap: 10px;
+    display: grid;
+    grid-auto-rows: 30%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+/*==========  ID Rules  ==========*/
+#weekly-tab {
+    padding: 0px 30px;
+}
+
+#main-logo {
+    margin: 15% auto;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 7%;
+    font-style: italic;
+    text-align: center;
+    font-family: var(--o-better-font-family);
+}
+
+#copyright {
+    margin: 15% auto;
+    font-size: 20px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-style: italic;
+    text-align: center;
+}
+
+#bopyright {
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*==========  Class Rules  ==========*/
+.saved-data {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: var(--o-headers-font-family);
+}
+
+.previous-data {
+    float: right;
+    display: inline;
+    text-align: right;
+}
+
+.work-case {
+    margin-top: -3%;
+    margin-left: 70%;
+}
+
+.user-report {
+    width: 70%;
+    margin-left: 30%;
+    -moz-height: fit-content;
+    height: fit-content;
+}
+
+.user-image {
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    border: 3px solid hsl(0, 0%, 100%);
+}
+
+.name-container {
+    width: 85%;
+    margin: 0% auto;
+    -moz-height: fit-content;
+    height: fit-content;
+    padding: 8% 0%;
+}
+
+.data-wrapper {
+    width: 90%;
+    height: 175%;
+    margin: 5% auto;
+}
+
+.user-info {
+    margin: 0px;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: var(--o-goodform-background-color);
+}
+
+.work-record {
+    margin: 0px;
+    grid-column: 1;
+    grid-row: 2 / 3;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.play-record {
+    margin: 0px;
+    grid-column: 1;
+    grid-row: 3 / 4;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.study-record {
+    margin: 0px;
+    grid-column: 1;
+    grid-row: 4 / 5;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.exercise-record {
+    grid-column: 1;
+    grid-row: 5 / 6;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.social-record {
+    grid-column: 1;
+    grid-row: 6 / 7;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.selfcare-record {
+    grid-column: 1;
+    grid-row: 7 / 8;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.profile-description {
+    width: 100%;
+    height: 63%;
+    margin: 0px;
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+}
+
+.time-frame {
+    width: 90%;
+    margin: 0% auto;
+    -moz-height: fit-content;
+    height: fit-content;
+}
+
+.track-record {
+    width: 85%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    padding-bottom: 0px;
+}
+
+.record-time {
+    width: 85%;
+    margin: 0px auto;
+    padding: 0px 0px;
+    padding-top: 0px;
+} 
+
+.work-logo {
+    width: 100%;
+    -moz-height: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play-logo {
+    width: 100%;
+    -moz-height: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study-logo {
+    width: 100%;
+    -moz-height: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-logo {
+    width: 100%;
+    -moz-height: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social-logo {
+    width: 100%;
+    -moz-height: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare-logo {
+    width: 100%;
+    -moz-height: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.work-data {
+    margin: 0px;
+    width: 100%;
+    height: 70%;
+    margin-top: 40px;
+    position: absolute;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--o-goodform-background-color);
+}
+
+.exercise-logo img {
+    width: 75px;
+    height: 81px;
+}
+
+.selfcare-logo img {
+    width: 75px;
+    height: 100px;
+}
+
+
+
+/*==========  Element Rules  ==========*/
+.track-record img {
+    padding-top: 10px;
+}
+
+p {
+    font-size: 15px;
+    margin: 10px 0px 3px 10px;
+    color: hsl(236, 100%, 87%);
+    font-family: var(--o-better-font-family);
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight: lighter;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--o-headers-font-family);
+}
+
+ul {
+    padding: 0px;
+    margin: 25px auto;
+    -moz-width: fit-content;
+    width: fit-content;
+    list-style-type: none;
+}
+
+li {
+    font-size: 17px;
+    display: inline-block;
+    color:  hsl(235, 45%, 61%);
+    font-family: var(--o-better-font-family);
+}
+
+h2 {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 0px;
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--o-headers-font-family);
+}
+
+
+/*==========  Animation and Pseudo Rules  ==========*/
+li:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+
+.work-data:hover {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background-color: hsl(237, 44%, 39%);
+}
+
+
+/*========== Media Queries  ==========*/
+@media only screen and (min-width: 411px) and (max-width: 414px) {
+    .user-report {
+        margin-left: 26%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .work-case {
+        margin-left: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    li {
+        font-size: 20px;
+    }
+
+    .name-container {
+        padding: 3% 0%;
+    }
+
+    .user-report p {
+        text-align: right;
+    }
+
+    .user-report h1 {
+        text-align: right;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .name-container {
+        padding: 3% 0% !important;
+    }
+}
+
+
+@media only screen and (orientation: landscape) {
+    #main-logo {
+        margin-top: 7%;
+    }
+
+    #copyright {
+        margin-bottom: 7%;
+    }
+
+    .name-container {
+        padding: 5% 0%;
+    }
+
+
+    .user-report p {
+        text-align: right;
+    }
+
+    .user-report h1 {
+        text-align: right;
+    }
+}
+
+
+
+
